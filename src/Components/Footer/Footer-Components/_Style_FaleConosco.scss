@@ -33,6 +33,7 @@
         }
     }
     textarea {
+        font-family: $Argentum-Black;
         @include MaxWdth-Wdth(460px,32vw);
         @include MaxHght-Hght(95.625px,6.640625vw);
         border-radius: 16px;
