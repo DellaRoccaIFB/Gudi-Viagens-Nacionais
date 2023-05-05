@@ -200,6 +200,7 @@ header .banner .container-title-search-button button:hover {
 }
 #viagens-nacionais .container-imagem img {
   width: 100%;
+  height: 100%;
 }
 #viagens-nacionais .card-viagens-nacionais {
   max-width: 720px;
@@ -225,14 +226,20 @@ header .banner .container-title-search-button button:hover {
   margin: 0 1vw 0 0;
 }
 #viagens-nacionais .card-viagens-nacionais .para-centralizar .container-linha-e-h3 h3 {
-  font-size: 1.5rem;
+  font-size: 2vw;
   font-weight: 300;
   letter-spacing: 2px;
 }
 #viagens-nacionais .card-viagens-nacionais .para-centralizar h2 {
-  font-size: 3.5rem;
+  font-size: 3.5vw;
   font-weight: 900;
-  line-height: 55px;
+  line-height: 40px;
+}
+@media (min-width: 1440px) {
+  #viagens-nacionais .card-viagens-nacionais .para-centralizar h2 {
+    font-size: 3.5rem;
+    line-height: 50px;
+  }
 }
 #viagens-nacionais .card-viagens-nacionais .para-centralizar p {
   font-size: 1.2vw;
