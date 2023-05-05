@@ -1,0 +1,55 @@
+@import "../../../abstract/variables-fonts";
+
+#viagens-nacionais {
+  font-family: $Argentum-Black;
+  @include MaxWdth-Wdth(1440px, 100%);
+  display: flex;
+  justify-content: space-between;
+  .container-imagem {
+    @include MaxWdth-Wdth(720px, 50vw);
+    @include MaxHght-Hght(455px, 32vw);
+    img {
+      width: 100%;
+    }
+  }
+  .card-viagens-nacionais {
+    @include MaxWdth-Wdth(720px, 50vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .para-centralizar {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.5vw;
+      justify-content: center;
+      .container-linha-e-h3 {
+        display: flex;
+        align-items: center;
+        .linha-branca {
+          width: 50px;
+          height: 1.5px;
+          margin: 0 1vw 0 0;
+        }
+        h3 {
+          font-size: 1.5rem;
+          font-weight: 300;
+          letter-spacing: 2px;
+        }
+      }
+      h2 {
+        font-size: 3.5rem;
+        font-weight: 900;
+        line-height: 55px;
+      }
+      p {
+        font-size: 1.2vw;
+        letter-spacing: 1.5px
+      }
+      button {
+        @if () {}
+        @include Estilo-botao-viagens($color-blue, $color-white);
+      }
+    }
+  }
+}

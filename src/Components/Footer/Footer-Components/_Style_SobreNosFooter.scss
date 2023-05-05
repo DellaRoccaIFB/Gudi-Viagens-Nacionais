@@ -1,0 +1,36 @@
+@import "../../../abstract/variables-fonts";
+
+#sobre-nos {
+    @include MaxHght-Hght(265.78px,18.45vw);
+    font-family: $Argentum-Medium;
+    padding: 0 0 0 4.9vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .column {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        img {
+            margin: 0 0 1vw 0;
+            @include MaxWdth-Wdth(180px ,12.45vw);
+        }
+        h3 {
+            color: $color-blue;
+            margin: 0 0 1vw 0;
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+        p {
+            color: $color-blue;
+            font-weight: 700;
+            line-height: 30px;
+            transition: all 0.2s;
+            &:hover {
+                transform: scale(1.03);
+                cursor: pointer;
+            }
+        }
+    }
+}

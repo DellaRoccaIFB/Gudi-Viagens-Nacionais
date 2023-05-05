@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'ArgentumSans-Thin';
+    src: url('../assets/argentum-sans/ArgentumSans-Thin.ttf');
+}
+@font-face {
+    font-family: 'ArgentumSans-Light';
+    src: url('../assets/argentum-sans/ArgentumSans-Light.ttf');
+}
+@font-face {
+    font-family: 'ArgentumSans-Regular';
+    src: url('../assets/argentum-sans/ArgentumSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'ArgentumSans-Medium';
+    src: url('../assets/argentum-sans/ArgentumSans-Medium.ttf');
+}
+@font-face {
+    font-family: 'ArgentumSans-Bold';
+    src: url('../assets/argentum-sans/ArgentumSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'ArgentumSans-ExtraBold';
+    src: url('../assets/argentum-sans/ArgentumSans-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'ArgentumSans-Black';
+    src: url('../assets/argentum-sans/ArgentumSans-Black.ttf');
+}
+
+//Font-size
+$Argentum-Thin: 'ArgentumSans-Thin', sans-serif;
+$Argentum-Light: 'ArgentumSans-Light', sans-serif;
+$Argentum-Regular: 'ArgentumSans-Regular', sans-serif;
+$Argentum-Medium: 'ArgentumSans-Medium', sans-serif;
+$Argentum-Bold: 'ArgentumSans-Bold', sans-serif;
+$Argentum-ExtraBold: 'ArgentumSans-ExtraBold', sans-serif;
+$Argentum-Black: 'ArgentumSans-Black', sans-serif;
+
+
+//Font Colors
+
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-blue: #005BD5;
+$color-dark-blue: #002E6B;
+$color-dark-grey: #8B8B8B;
+$color-medium-grey: #AFB3B8;
+$color-light-grey: #EEEEEE;
+$color-blue-gradient: transparent linear-gradient(180deg, #005BD5 0%, #002E6B 100%) 0% 0% no-repeat padding-box;;
+
+// variavel largura da imagem 
+
+@mixin MaxWdth-Wdth ($max-width, $width) {
+    max-width: $max-width;
+    width: $width;
+}
+@mixin MaxHght-Hght ($max-height, $height) {
+    max-height: $max-height;
+    height: $height;
+}
+
+// Button variable
+
+@mixin Estilo-botao-header ($primary-color, $secundary-color) {
+    @include MaxWdth-Wdth(353px, 10.5vw);
+    @include MaxHght-Hght(33.12px, 2.3vw);
+    border: none;
+    border-radius: 15px;
+    color: $secundary-color;
+    letter-spacing: 3px;
+    background-color: $primary-color;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        border: solid 2px $primary-color;
+        color: $primary-color;
+        background-color: $secundary-color;
+        font-weight: 900;
+        letter-spacing: 2px;
+}
+}
+
+@mixin Estilo-botao-viagens ($primary-color, $secundary-color) {
+    @include MaxWdth-Wdth(353px, 10.5vw);
+    @include MaxHght-Hght(38.88px, 2.7vw);
+    border: solid 2px $secundary-color;
+    border-radius: 15px;
+    color: $secundary-color;
+    letter-spacing: 3px;
+    background-color: $primary-color;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        border: solid 2px $primary-color;
+        color: $primary-color;
+        background-color: $secundary-color;
+        font-weight: 900;
+        letter-spacing: 2px;
+}
+}
+
+@mixin Estilo-botao-turistico {
+    background: rgba(255, 255, 255, 0.185);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}

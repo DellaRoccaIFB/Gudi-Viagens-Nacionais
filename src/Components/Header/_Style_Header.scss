@@ -1,0 +1,91 @@
+@import "../../abstract/variables-fonts";
+
+header {
+  nav {
+    @include MaxHght-Hght(45px, 3.125vw);
+    display: flex;
+    justify-content: space-between;
+    .logo-container {
+      width: 50%;
+      padding: 0 0 0 5vw;
+      display: flex;
+      a {
+        display: flex;
+        align-items: center;
+        img {
+          @include MaxWdth-Wdth(200px, 13.88vw);
+        }
+      }
+    }
+    ul {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li {
+        margin: 0 0 0 2.5vw;
+        @include MaxWdth-Wdth(130px, 9.33vw);
+        @include MaxHght-Hght(35px, 3.125vw);
+        color: $color-blue;
+        font-family: $Argentum-Regular;
+        font-size: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        transition: all 0.3s;
+        font-weight: 900;
+        &:hover {
+          background-color: $color-blue;
+          color: $color-white;
+          cursor: pointer;
+          letter-spacing: 2px;
+          font-family: $Argentum-Black;
+          font-weight: 900;
+        }
+        @media (min-width: 1440px) {
+            font-size: 1rem;
+        }
+      }
+    }
+  }
+  .banner {
+    position: relative;
+    @include MaxHght-Hght(620px, 43.05vw);
+    background-size: cover;
+    background-position: center;
+    .container-title-search-button {
+      position: absolute;
+      top: 30%;
+      left: 3%;
+      @include MaxWdth-Wdth(400px, 27.77vw);
+      display: flex;
+      flex-direction: column;
+        h1 {
+        color: $color-blue;
+        font-family: $Argentum-Bold;
+        font-size: 3vw;
+        font-weight: 800;
+        @media (min-width: 1440px) {
+          font-size: 2.71rem;
+        }
+      }
+      input {
+        @include MaxWdth-Wdth(353px, 24.5vw);
+        @include MaxHght-Hght(31.68px, 2.2vw);
+        margin: 1.11vw 0 2vw 0;
+        border:none;
+        border-radius: 20px;
+        padding: 0 0 0 1.5vw;
+        transition: all 0.1s;
+        &:focus, &:hover {
+            outline: solid 2px $color-blue;
+        }
+    }
+    button {
+        @include Estilo-botao-header ($color-blue, $color-white);
+        }
+    }
+    }
+  }
+

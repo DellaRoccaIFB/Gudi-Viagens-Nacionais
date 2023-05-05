@@ -1,0 +1,18 @@
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+* {
+    @include reset()
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+}

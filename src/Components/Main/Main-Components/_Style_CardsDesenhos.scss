@@ -1,0 +1,24 @@
+@import "../../../abstract/variables-fonts";
+
+#section-cards-desenhos {
+    .card-desenho {
+        @include MaxWdth-Wdth(246px, 18.01vw);
+        @include MaxHght-Hght(300px, 20.1vw);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 2vw;
+        transition: all 0.2s;
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+    img {
+        width: 40%;
+    }
+    h2 {
+        font-family: $Argentum-Bold;
+        text-align: center;
+    }
+}

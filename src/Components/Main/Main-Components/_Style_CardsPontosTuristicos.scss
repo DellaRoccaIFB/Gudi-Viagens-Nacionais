@@ -1,0 +1,34 @@
+@import "../../../abstract/variables-fonts";
+
+#card-turistico {
+    @include MaxWdth-Wdth(1440px, 100vw);
+    .bg-image {
+    width: 100%;
+    @include MaxHght-Hght(300px, 21vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    button {
+      @include MaxWdth-Wdth(230.4px, 16vw);
+      @include MaxHght-Hght(28.8px, 2vw);
+      @include Estilo-botao-turistico;
+      letter-spacing: 3px;
+      border-radius: 15px;
+      font-family: $Argentum-Bold;
+      font-size: 1vw;
+      transition: all 0.3s;
+      color: $color-white;
+      font-weight: 700;
+      text-transform: uppercase;
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+      @media (min-width: 1440px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}

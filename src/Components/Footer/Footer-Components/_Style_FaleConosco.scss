@@ -1,0 +1,49 @@
+@import "../../../abstract/variables-fonts";
+
+#container-fale-conosco {
+    @include MaxHght-Hght(500px,300vw);
+    font-family: $Argentum-Black;
+    background-color: $color-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1vw;
+    padding: 0 0 0 0;
+    h2 {
+        font-size: 3.5rem;
+        color: $color-white;
+    }
+    .small-input {
+        @include MaxWdth-Wdth(460px,32vw);
+        @include MaxHght-Hght(40px,300vw);
+        border: none;
+        border-radius: 16px;
+        padding: 0 0 0 1.5vw
+    }
+    .large-input {
+        @include MaxWdth-Wdth(460px,32vw);
+        @include MaxHght-Hght(95.625px,6.640625vw);
+        border-radius: 16px;
+        border: none;
+        &::placeholder {
+            position: absolute;
+            top: 10%;
+            left: 4%;
+        }
+    }
+    textarea {
+        @include MaxWdth-Wdth(460px,32vw);
+        @include MaxHght-Hght(95.625px,6.640625vw);
+        border-radius: 16px;
+        border: none;
+        resize: none;
+        padding: 0.9vw 0 0 1.5vw;
+        &:hover {
+            border: 2px;
+        }
+    }
+    button {
+        @include Estilo-botao-viagens($color-blue,$color-white)
+    }
+}
