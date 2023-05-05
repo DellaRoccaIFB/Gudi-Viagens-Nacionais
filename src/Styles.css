@@ -89,6 +89,15 @@ header nav ul li:hover {
   font-family: "ArgentumSans-Black", sans-serif;
   font-weight: 900;
 }
+@media (max-width: 1024px) {
+  header nav ul li {
+    font-size: 1vw;
+    max-width: 95px;
+    width: 9.33vw;
+    max-height: 25px;
+    height: 3.125vw;
+  }
+}
 @media (min-width: 1440px) {
   header nav ul li {
     font-size: 1rem;

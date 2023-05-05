@@ -43,6 +43,12 @@ header {
           font-family: $Argentum-Black;
           font-weight: 900;
         }
+        @media (max-width: 1024px) {
+          font-size: 1vw;
+          @include MaxWdth-Wdth(95px, 9.33vw);
+          @include MaxHght-Hght(25px, 3.125vw);
+
+        }
         @media (min-width: 1440px) {
             font-size: 1rem;
         }
