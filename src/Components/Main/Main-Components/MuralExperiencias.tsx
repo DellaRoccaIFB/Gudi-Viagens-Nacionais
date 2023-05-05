@@ -1,5 +1,3 @@
-import React from "react";
-
 type setString = {
     imagem1: string; 
     imagem2: string; 

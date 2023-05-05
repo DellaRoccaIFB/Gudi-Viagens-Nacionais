@@ -1,4 +1,3 @@
-import React from "react"
 import Gudi from "../../../Img/Gudi O bom da vida e viver.svg"
 
 export default function SobreNos() {
